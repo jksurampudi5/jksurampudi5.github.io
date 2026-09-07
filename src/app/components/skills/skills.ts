@@ -22,7 +22,7 @@ export class SkillsComponent {
       title: 'Lakehouses & Data Warehouses',
       icon: '❄️',
       description: 'Enterprise lakehouse architecture, governance, and warehouse optimization.',
-      gradient: 'linear-gradient(135deg, #4f46e5, #6366f1)',
+      gradient: 'linear-gradient(135deg, #0284c7, #38bdf8)',
       skills: [
         'Azure Databricks',
         'Delta Lake',
@@ -39,7 +39,7 @@ export class SkillsComponent {
       title: 'Big Data & Distributed Compute',
       icon: '⚡',
       description: 'Distributed query engines, high-scale transformations, and cluster performance tuning.',
-      gradient: 'linear-gradient(135deg, #2563eb, #38bdf8)',
+      gradient: 'linear-gradient(135deg, #0d9488, #2dd4bf)',
       skills: [
         'PySpark',
         'Apache Spark',
@@ -71,7 +71,7 @@ export class SkillsComponent {
       title: 'Cloud & Serverless Platforms',
       icon: '☁️',
       description: 'Cloud storage, serverless compute, managed databases, and scalable ingestion.',
-      gradient: 'linear-gradient(135deg, #7c3aed, #a855f7)',
+      gradient: 'linear-gradient(135deg, #6366f1, #818cf8)',
       skills: [
         'AWS Glue',
         'Amazon S3',
@@ -87,7 +87,7 @@ export class SkillsComponent {
       title: 'Data Engineering Patterns',
       icon: '🏛️',
       description: 'Core design patterns, data quality validation, and schema evolution.',
-      gradient: 'linear-gradient(135deg, #4f46e5, #06b6d4)',
+      gradient: 'linear-gradient(135deg, #0284c7, #2dd4bf)',
       skills: [
         'Python',
         'Advanced SQL',

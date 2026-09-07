@@ -3,7 +3,7 @@
   padding: 5rem 2rem 6rem 2rem;
   max-width: 1280px;
   margin: 0 auto;
-  min-height: calc(100vh - 100px);
+  min-height: min(calc(100vh - 100px), 820px);
   display: flex;
   align-items: center;
 }
@@ -28,7 +28,7 @@
 
 .first-name {
   display: block;
-  background: linear-gradient(135deg, #38bdf8 0%, #6366f1 100%);
+  background: linear-gradient(135deg, #ffffff 15%, #7dd3fc 60%, #38bdf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -38,7 +38,7 @@
 
 .last-name {
   display: block;
-  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 55%, #818cf8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -50,7 +50,7 @@
 .hero-role {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #38bdf8;
+  color: #7dd3fc;
   margin-bottom: 1.6rem;
   letter-spacing: -0.01em;
   animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
@@ -78,7 +78,7 @@
 .btn-connect {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
   color: #ffffff;
   padding: 0.95rem 2.2rem;
   border-radius: 12px;
@@ -86,7 +86,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.45);
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.35);
   border: none;
 }
 
@@ -100,7 +100,7 @@
   background: linear-gradient(
     60deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.25),
     transparent
   );
   transform: rotate(25deg) translateY(-100%);
@@ -113,14 +113,14 @@
 
 .btn-connect:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 28px rgba(99, 102, 241, 0.65);
-  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  box-shadow: 0 10px 28px rgba(56, 189, 248, 0.5);
+  background: linear-gradient(135deg, #0369a1, #0f766e);
 }
 
 .btn-work {
   background: rgba(15, 23, 42, 0.7);
-  border: 2px solid #6366f1;
-  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  color: #7dd3fc;
   padding: 0.95rem 2.2rem;
   border-radius: 12px;
   font-size: 1rem;
@@ -131,15 +131,15 @@
 }
 
 .btn-work:hover {
-  background: rgba(99, 102, 241, 0.18);
-  border-color: #818cf8;
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #7dd3fc;
   color: #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
 }
 
 /* ==========================================================================
-   PURE CIRCULAR PROFILE SHOWCASE (SQUARE COMPLETELY REMOVED)
+   PURE CIRCULAR PROFILE SHOWCASE WITH CALM GLACIER & SEAFOAM HALO
    ========================================================================== */
 
 .hero-visual {
@@ -158,27 +158,27 @@
   animation: floatSlow 6s ease-in-out infinite;
 }
 
-/* Soft Ambient Radial Back-Glow */
+/* Calm Ambient Back-Glow */
 .profile-glow {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.3) 0%, rgba(6, 182, 212, 0.15) 50%, transparent 72%);
+  background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.25) 0%, rgba(45, 212, 191, 0.14) 50%, transparent 72%);
   filter: blur(35px);
   pointer-events: none;
   animation: glowPulse 4.5s ease-in-out infinite;
 }
 
-/* Delicate 3.5px Gradient Accent Halo Ring */
+/* Slender 3.5px Calm Gradient Halo Ring */
 .profile-circle-border {
   position: relative;
   padding: 3.5px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #38bdf8 0%, #6366f1 50%, #a855f7 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 50%, #818cf8 100%);
   box-shadow: 
     0 20px 45px -10px rgba(0, 0, 0, 0.75),
-    0 0 35px rgba(99, 102, 241, 0.28);
+    0 0 30px rgba(56, 189, 248, 0.25);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
 }
 
@@ -186,7 +186,7 @@
   transform: translateY(-6px) scale(1.02);
   box-shadow: 
     0 28px 60px -10px rgba(0, 0, 0, 0.85),
-    0 0 45px rgba(99, 102, 241, 0.45);
+    0 0 45px rgba(56, 189, 248, 0.45);
 }
 
 /* Inner Circular Frame */
@@ -195,7 +195,7 @@
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  background: #0b1120;
+  background: #0a0f1d;
   display: flex;
   align-items: center;
   justify-content: center;

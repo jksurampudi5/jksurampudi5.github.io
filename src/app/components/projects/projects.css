@@ -1,6 +1,6 @@
 .projects {
   padding: 5rem 2rem;
-  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.12) 0%, rgba(11, 17, 32, 0.98) 70%, #0b1120 100%);
+  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.08) 0%, rgba(10, 15, 29, 0.98) 70%, #0a0f1d 100%);
   color: #e2e8f0;
   position: relative;
 }
@@ -21,20 +21,20 @@
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: #38bdf8;
+  color: #7dd3fc;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(56, 189, 248, 0.12);
   padding: 0.35rem 0.9rem;
   border-radius: 9999px;
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
   margin: 0.5rem 0 1rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #38bdf8 50%, #6366f1 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #7dd3fc 60%, #2dd4bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,94 +48,47 @@
   margin: 0;
 }
 
-/* Controls & Sort Bar */
+/* Company Filter Tabs */
 .controls-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
+  justify-content: center;
   margin-bottom: 3.5rem;
 }
 
-.sort-selector {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  background: rgba(15, 23, 42, 0.75);
-  padding: 0.35rem 0.6rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(99, 102, 241, 0.25);
-}
-
-.sort-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #94a3b8;
-  padding: 0 0.5rem;
-}
-
-.sort-pill {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #94a3b8;
-  padding: 0.4rem 0.85rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.sort-pill:hover {
-  color: #f8fafc;
-  background: rgba(99, 102, 241, 0.18);
-}
-
-.sort-pill.active-sort {
-  background: rgba(99, 102, 241, 0.28);
-  border-color: rgba(56, 189, 248, 0.6);
-  color: #38bdf8;
-  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.35);
-}
-
-/* Company Filter Tabs */
 .filter-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.75rem;
   justify-content: center;
-  margin-bottom: 0;
+  max-width: 1000px;
 }
 
 .filter-tab {
-  background: rgba(30, 41, 59, 0.7);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(26, 36, 60, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.2);
   color: #cbd5e1;
-  padding: 0.6rem 1.1rem;
+  padding: 0.65rem 1.3rem;
   border-radius: 9999px;
   font-size: 0.85rem;
   font-weight: 600;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(8px);
 }
 
 .filter-tab:hover {
-  background: rgba(99, 102, 241, 0.2);
-  border-color: rgba(56, 189, 248, 0.5);
-  color: #f8fafc;
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(45, 212, 191, 0.4);
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
 .filter-tab.active {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #0284c7, #0d9488);
   color: #ffffff;
-  border-color: #818cf8;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.45);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 18px rgba(56, 189, 248, 0.35);
 }
 
 /* Projects Grid */
@@ -146,8 +99,8 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.85) 100%);
-  border: 1px solid rgba(99, 102, 241, 0.22);
+  background: linear-gradient(135deg, rgba(26, 36, 60, 0.6) 0%, rgba(15, 23, 42, 0.88) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.18);
   border-radius: 20px;
   padding: 2.2rem;
   position: relative;
@@ -157,10 +110,10 @@
 }
 
 .project-card:hover {
-  border-color: rgba(56, 189, 248, 0.55);
-  box-shadow: 0 20px 45px -12px rgba(99, 102, 241, 0.25);
+  border-color: rgba(45, 212, 191, 0.45);
+  box-shadow: 0 20px 45px -12px rgba(56, 189, 248, 0.2);
   transform: translateY(-4px);
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.92) 100%);
+  background: linear-gradient(135deg, rgba(30, 42, 70, 0.7) 0%, rgba(18, 28, 50, 0.94) 100%);
 }
 
 /* Card Header Meta */
@@ -172,15 +125,15 @@
   gap: 1rem;
   margin-bottom: 1rem;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .company-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(6, 182, 212, 0.18));
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(45, 212, 191, 0.12));
+  border: 1px solid rgba(56, 189, 248, 0.3);
   padding: 0.45rem 1rem;
   border-radius: 8px;
 }
@@ -192,7 +145,7 @@
 .company-name {
   font-weight: 700;
   font-size: 0.95rem;
-  color: #38bdf8;
+  color: #7dd3fc;
   letter-spacing: 0.04em;
 }
 
@@ -206,7 +159,7 @@
   background: rgba(15, 23, 42, 0.6);
   padding: 0.35rem 0.8rem;
   border-radius: 6px;
-  border: 1px solid rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Client & Role Row */
@@ -223,8 +176,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.35);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   padding: 0.35rem 0.9rem;
   border-radius: 8px;
 }
@@ -233,14 +186,14 @@
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: #fbbf24;
+  color: #7dd3fc;
   letter-spacing: 0.05em;
 }
 
 .client-value {
   font-weight: 700;
   font-size: 0.92rem;
-  color: #fef3c7;
+  color: #f8fafc;
 }
 
 .role-location {
@@ -252,12 +205,12 @@
 }
 
 .role-text {
-  color: #818cf8;
+  color: #38bdf8;
   font-weight: 600;
 }
 
 .dot-separator {
-  color: #475569;
+  color: #64748b;
 }
 
 .location-text {
@@ -279,24 +232,24 @@
   line-height: 1.6;
   margin: 0 0 1.6rem 0;
   font-style: italic;
-  border-left: 3px solid #6366f1;
+  border-left: 3px solid #38bdf8;
   padding-left: 0.9rem;
 }
 
 /* Highlights Section */
 .highlights-section {
   margin-bottom: 1.6rem;
-  background: rgba(15, 23, 42, 0.45);
+  background: rgba(15, 23, 42, 0.5);
   padding: 1.2rem 1.4rem;
   border-radius: 12px;
-  border: 1px solid rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .highlights-heading {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #38bdf8;
+  color: #7dd3fc;
   margin: 0 0 0.9rem 0;
   font-weight: 700;
 }
@@ -320,7 +273,7 @@
 }
 
 .bullet-icon {
-  color: #6366f1;
+  color: #2dd4bf;
   font-size: 0.9rem;
   margin-top: 0.15rem;
   flex-shrink: 0;
@@ -342,13 +295,13 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   padding-top: 0.8rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .tech-badge {
-  background: rgba(30, 41, 59, 0.75);
-  border: 1px solid rgba(99, 102, 241, 0.25);
-  color: #a5b4fc;
+  background: rgba(26, 36, 60, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #bae6fd;
   padding: 0.35rem 0.75rem;
   border-radius: 6px;
   font-size: 0.8rem;
@@ -359,11 +312,11 @@
 }
 
 .tech-badge:hover {
-  background: rgba(99, 102, 241, 0.25);
+  background: rgba(56, 189, 248, 0.2);
   border-color: #38bdf8;
   color: #ffffff;
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
 }
 
 /* Responsive adjustments */
