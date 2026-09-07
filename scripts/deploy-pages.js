@@ -13,6 +13,15 @@ if (!fs.existsSync(distDir)) {
   process.exit(1);
 }
 
+// Clean up previously copied hash bundles from root
+const rootFiles = fs.readdirSync(rootDir);
+for (const file of rootFiles) {
+  if (/^(main|polyfills|styles|chunk)-[A-Z0-9]+\.(js|css)(\.map)?$/.test(file)) {
+    fs.unlinkSync(path.join(rootDir, file));
+    console.log(` - Removed old bundle: ${file}`);
+  }
+}
+
 console.log('2. Syncing build artifacts to repository root...');
 const files = fs.readdirSync(distDir);
 for (const file of files) {

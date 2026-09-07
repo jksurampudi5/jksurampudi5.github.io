@@ -1,10 +1,76 @@
 <section id="projects" class="projects">
-  <h2 class="section-title">Featured Projects</h2>
-  <div class="projects-grid">
-    <div *ngFor="let project of projects" class="project-card">
-      <h3>{{ project.title }}</h3>
-      <p class="project-tech">{{ project.tech }}</p>
-      <p class="project-desc">{{ project.description }}</p>
+  <div class="projects-container">
+    <div class="section-header">
+      <span class="section-subtitle">PROVEN TRACK RECORD</span>
+      <h2 class="section-title">Featured Projects & Client Engagements</h2>
+      <p class="section-desc">
+        Enterprise data platform modernizations, medallion architectures, real-time ingestion pipelines, and cloud lakehouses built for global organizations.
+      </p>
+    </div>
+
+    <!-- Company Filter Tabs -->
+    <div class="filter-tabs">
+      <button 
+        *ngFor="let company of companies"
+        (click)="filterByCompany(company)"
+        [class.active]="selectedCompany === company"
+        class="filter-tab">
+        {{ company === 'ALL' ? 'All Engagements (' + projects.length + ')' : company }}
+      </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <article *ngFor="let project of filteredProjects" class="project-card">
+        
+        <!-- Company & Timeline Header -->
+        <div class="card-meta-top">
+          <div class="company-badge">
+            <span class="icon">🏢</span>
+            <span class="company-name">{{ project.company }}</span>
+          </div>
+          <div class="period-badge">
+            <span class="calendar-icon">📅</span>
+            <span>{{ project.period }}</span>
+          </div>
+        </div>
+
+        <!-- Client & Role Row -->
+        <div class="client-role-bar">
+          <div class="client-badge" *ngIf="project.client">
+            <span class="client-label">Client:</span>
+            <span class="client-value">💼 {{ project.client }}</span>
+          </div>
+          <div class="role-location">
+            <span class="role-text">{{ project.role }}</span>
+            <span class="dot-separator">•</span>
+            <span class="location-text">📍 {{ project.location }}</span>
+          </div>
+        </div>
+
+        <!-- Project Title & Tagline -->
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-tagline">{{ project.tagline }}</p>
+
+        <!-- Highlights List -->
+        <div class="highlights-section">
+          <h4 class="highlights-heading">Key Architecture & Engineering Highlights:</h4>
+          <ul class="highlights-list">
+            <li *ngFor="let bullet of project.highlights">
+              <span class="bullet-icon">⚡</span>
+              <span class="bullet-text">{{ bullet }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tech Stack Badges -->
+        <div class="tech-stack-container">
+          <span *ngFor="let tool of project.tools" class="tech-badge">
+            {{ tool }}
+          </span>
+        </div>
+
+      </article>
     </div>
   </div>
 </section>
