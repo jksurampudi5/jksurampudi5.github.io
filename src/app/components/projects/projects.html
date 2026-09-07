@@ -8,15 +8,40 @@
       </p>
     </div>
 
-    <!-- Company Filter Tabs -->
-    <div class="filter-tabs">
-      <button 
-        *ngFor="let company of companies"
-        (click)="filterByCompany(company)"
-        [class.active]="selectedCompany === company"
-        class="filter-tab">
-        {{ company === 'ALL' ? 'All Engagements (' + projects.length + ')' : company }}
-      </button>
+    <!-- Controls: Filter & Sort Bar -->
+    <div class="controls-wrapper">
+      <div class="sort-selector">
+        <span class="sort-label">Order:</span>
+        <button 
+          (click)="setSort('timeline-asc')" 
+          [class.active-sort]="currentSort === 'timeline-asc'"
+          class="sort-pill">
+          📅 Timeline (Ascending: 2020 → Present)
+        </button>
+        <button 
+          (click)="setSort('alphabetical-company')" 
+          [class.active-sort]="currentSort === 'alphabetical-company'"
+          class="sort-pill">
+          🔤 Company (A → Z)
+        </button>
+        <button 
+          (click)="setSort('timeline-desc')" 
+          [class.active-sort]="currentSort === 'timeline-desc'"
+          class="sort-pill">
+          ⏳ Latest First
+        </button>
+      </div>
+
+      <!-- Company Filter Tabs -->
+      <div class="filter-tabs">
+        <button 
+          *ngFor="let company of companies"
+          (click)="filterByCompany(company)"
+          [class.active]="selectedCompany === company"
+          class="filter-tab">
+          {{ company === 'ALL' ? 'All Companies (' + projects.length + ')' : company }}
+        </button>
+      </div>
     </div>
 
     <!-- Projects Grid -->
