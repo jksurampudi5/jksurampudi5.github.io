@@ -1,16 +1,17 @@
-/* Global Design Tokens & Theme - Emerald & Mint Tech Palette (Supabase / Modern Data) */
+/* Global Design Tokens & Theme - Electric Indigo & Cyan Tech Palette (Vercel / Linear Modern Aesthetic) */
 :root {
-  --bg-canvas: #090d16;
-  --bg-surface: rgba(15, 23, 42, 0.75);
-  --bg-surface-elevated: rgba(22, 33, 54, 0.85);
+  --bg-canvas: #0b1120;
+  --bg-surface: rgba(15, 23, 42, 0.82);
+  --bg-surface-elevated: rgba(30, 41, 59, 0.88);
   
-  /* Emerald & Mint Accents */
-  --accent-primary: #10b981;        /* Vivid Emerald */
-  --accent-primary-hover: #059669;  /* Deep Emerald */
-  --accent-mint: #34d399;           /* Bright Mint */
-  --accent-mint-light: #6ee7b7;     /* Soft Mint */
-  --accent-teal: #14b8a6;           /* Cyan-Teal Bridge */
-  --accent-amber: #f59e0b;          /* Accent Gold/Amber */
+  /* Electric Indigo & Cyan Accents */
+  --accent-primary: #6366f1;        /* Electric Indigo */
+  --accent-primary-hover: #4f46e5;  /* Deep Indigo */
+  --accent-cyan: #06b6d4;           /* Bright Cyan */
+  --accent-sky: #38bdf8;            /* Vibrant Sky Blue */
+  --accent-violet: #8b5cf6;         /* Royal Violet */
+  --accent-purple: #a855f7;         /* Electric Purple */
+  --accent-amber: #f59e0b;          /* Accent Amber */
   
   /* Text Tokens */
   --text-primary: #f8fafc;
@@ -18,9 +19,9 @@
   --text-dim: #64748b;
   
   /* Border & Glass Tokens */
-  --border-subtle: rgba(52, 211, 153, 0.16);
-  --border-glow: rgba(16, 185, 129, 0.45);
-  --glass-blur: blur(16px);
+  --border-subtle: rgba(99, 102, 241, 0.2);
+  --border-glow: rgba(56, 189, 248, 0.45);
+  --glass-blur: blur(18px);
 }
 
 *, *::before, *::after {
@@ -34,9 +35,9 @@ html, body {
   min-height: 100%;
   background-color: var(--bg-canvas);
   background-image: 
-    radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.09) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(20, 184, 166, 0.08) 0px, transparent 50%),
-    radial-gradient(at 50% 100%, rgba(5, 150, 105, 0.06) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.10) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(139, 92, 246, 0.08) 0px, transparent 50%);
   background-attachment: fixed;
   color: var(--text-primary);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -64,7 +65,7 @@ p {
 }
 
 a {
-  color: var(--accent-mint);
+  color: var(--accent-sky);
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -81,7 +82,7 @@ button {
   outline: none;
 }
 
-/* Custom Sleek Mint Scrollbar */
+/* Custom Sleek Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -91,10 +92,10 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(52, 211, 153, 0.25);
+  background: rgba(99, 102, 241, 0.3);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(52, 211, 153, 0.5);
+  background: rgba(56, 189, 248, 0.55);
 }
