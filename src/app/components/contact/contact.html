@@ -1,0 +1,12 @@
+<section id="contact" class="cta-section">
+  <h2>Let's work together.</h2>
+  <p>I AM always interested in discussing Data engineering projects and opportunities like ai related.</p>
+  
+  <div class="social-links">
+    <button *ngFor="let link of contactLinks" 
+            (click)="copyToClipboard(link.value)" 
+            class="social-btn">
+      {{ link.label }}
+    </button>
+  </div>
+</section>

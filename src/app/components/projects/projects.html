@@ -1,0 +1,10 @@
+<section id="projects" class="projects">
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="projects-grid">
+    <div *ngFor="let project of projects" class="project-card">
+      <h3>{{ project.title }}</h3>
+      <p class="project-tech">{{ project.tech }}</p>
+      <p class="project-desc">{{ project.description }}</p>
+    </div>
+  </div>
+</section>
