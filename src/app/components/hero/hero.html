@@ -1,21 +1,40 @@
 <section id="home" class="hero">
-  <div class="hero-text">
-    <h1>Jayakrishna Surampudi</h1>
-    <p class="hero-subtitle">Senior Data Engineer</p>
-    <p class="hero-desc">
-      I build scalable data pipelines and modern cloud infrastructure. 
-      Specialized in Databricks, PySpark, and enterprise data solutions that drive business impact.
-    </p>
-    <div class="cta-buttons">
-      <button (click)="scrollToSection('contact')" class="btn-primary">
-  Connect Me
-</button>
-      <button (click)="scrollToSection('projects')" class="btn-secondary">
-        See My Work
-      </button>
+  <div class="hero-container">
+    <div class="hero-content">
+      
+      <!-- Name with Gradient -->
+      <h1 class="hero-name">
+        <span class="first-name">Jayakrishna</span>
+        <span class="last-name">Surampudi</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <h2 class="hero-role">Senior Data Engineer</h2>
+
+      <!-- Bio / Description -->
+      <p class="hero-description">
+        I build scalable data pipelines and modern cloud infrastructure. 
+        Specialized in Databricks, PySpark, and enterprise data solutions that drive business impact.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="hero-buttons">
+        <button (click)="scrollToSection('contact')" class="btn-connect">
+          Connect Me
+        </button>
+        <button (click)="scrollToSection('projects')" class="btn-work">
+          See My Work
+        </button>
+      </div>
+
     </div>
-  </div>
-  <div class="hero-image">
-    <img src="jayakrishna_profile_picture.png" alt="Jayakrishna Surampudi" />
+
+    <!-- Profile Visual -->
+    <div class="hero-visual">
+      <div class="profile-card">
+        <div class="profile-glow"></div>
+        <img src="jayakrishna_profile_picture.png" alt="Jayakrishna Surampudi - Senior Data Engineer" />
+      </div>
+    </div>
   </div>
 </section>

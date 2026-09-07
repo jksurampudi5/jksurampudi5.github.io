@@ -1,9 +1,33 @@
 <section id="skills" class="skills-section">
   <div class="skills-container">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div *ngFor="let skill of skills" class="skill-tag">
-        {{ skill }}
+    <div class="section-header">
+      <span class="section-badge">CORE CAPABILITIES</span>
+      <h2 class="section-title">Technical Expertise & Architecture Domains</h2>
+      <p class="section-desc">
+        Engineered with 3+ years of production experience spanning modern Lakehouse, cloud data warehouses, and distributed computing frameworks.
+      </p>
+    </div>
+
+    <div class="categories-grid">
+      <div *ngFor="let cat of categories" class="category-card">
+        <div class="card-glow" [style.background]="cat.gradient"></div>
+
+        <div class="category-header">
+          <div class="category-icon-box" [style.background]="cat.gradient">
+            <span class="category-icon">{{ cat.icon }}</span>
+          </div>
+          <div>
+            <h3 class="category-title">{{ cat.title }}</h3>
+            <p class="category-desc">{{ cat.description }}</p>
+          </div>
+        </div>
+
+        <div class="skills-pills-container">
+          <span *ngFor="let skill of cat.skills" class="skill-pill">
+            <span class="pill-dot"></span>
+            <span class="skill-name">{{ skill }}</span>
+          </span>
+        </div>
       </div>
     </div>
   </div>

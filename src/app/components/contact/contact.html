@@ -1,12 +1,42 @@
 <section id="contact" class="cta-section">
-  <h2>Let's work together.</h2>
-  <p>I AM always interested in discussing Data engineering projects and opportunities like ai related.</p>
-  
-  <div class="social-links">
-    <button *ngFor="let link of contactLinks" 
-            (click)="copyToClipboard(link.value)" 
-            class="social-btn">
-      {{ link.label }}
-    </button>
+  <div class="cta-container">
+    
+    <div class="cta-header">
+      <span class="cta-badge">GET IN TOUCH</span>
+      <h2 class="cta-title">Let's Build Something Exceptional Together</h2>
+      <p class="cta-desc">
+        Interested in discussing enterprise data engineering, Databricks Medallion migrations, 
+        cloud infrastructure optimization, or AI-powered data pipelines? Reach out directly:
+      </p>
+    </div>
+
+    <!-- Contact Cards Grid -->
+    <div class="contact-grid">
+      <div *ngFor="let item of contacts" class="contact-card">
+        <div class="card-left">
+          <span class="contact-icon">{{ item.icon }}</span>
+          <div class="contact-details">
+            <span class="contact-label">{{ item.label }}</span>
+            <a [href]="item.value" target="_blank" rel="noopener noreferrer" class="contact-link">
+              {{ item.displayValue }}
+            </a>
+          </div>
+        </div>
+
+        <div class="card-right">
+          <button (click)="copyToClipboard(item.value, item.label)" class="copy-btn" title="Copy to clipboard">
+            <span *ngIf="copiedItem !== item.label">📋 Copy</span>
+            <span *ngIf="copiedItem === item.label" class="copied-indicator">✓ Copied!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Copyright -->
+    <footer class="portfolio-footer">
+      <p>© 2026 Jayakrishna Surampudi • Senior Data Engineer & Module Lead</p>
+      <p class="built-with">Crafted with Angular 20 & High-Performance Cloud Architecture</p>
+    </footer>
+
   </div>
 </section>

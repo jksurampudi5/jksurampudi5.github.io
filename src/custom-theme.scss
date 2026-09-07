@@ -3,8 +3,8 @@
 html {
   @include mat.theme((
     color: (
-      primary: mat.$azure-palette,
-      tertiary: mat.$blue-palette,
+      primary: mat.$spring-green-palette,
+      tertiary: mat.$green-palette,
     ),
     typography: Roboto,
     density: 0,
@@ -14,6 +14,6 @@ html {
 body {
   color-scheme: dark;
   margin: 0;
-  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a3e 50%, #0f2d4a 100%);
-  color: #e0e0e0;
+  background: #090d16;
+  color: #f8fafc;
 }
